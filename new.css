@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1500px;
+    background-image: linear-gradient(to right, yellow, purple);
+    min-height: 100vh;
+    position: relative;
+}
+
+div.big_wrapper{
+    box-sizing: border-box;
+    margin: auto 20px;
+    padding-bottom: 250px;
+    clear: both;
+}
+
+body > div.topper > header{
+    text-align: center;
+    padding: 20px;
+}
+
+nav > ul > li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav > ul > li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover{
+    background-color: rgb(86, 87, 100);
+}
+
+nav > ul{
+    background-color: black;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+body > div > section{
+    width: 72%;
+    float: left;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* border: 1px dotted black; */
+}
+
+section > article{
+    padding: 20px;
+    box-shadow: 1px 1px 5px;
+    margin-bottom: 20px;
+}
+
+
+article > header{
+    padding-bottom: 10px;
+}
+
+
+article > footer{
+    text-align: right;
+}
+
+aside{
+    width: 25%;
+    float: right;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 13px;
+    padding: 10px;
+}
+
+aside > header{
+    text-align: center;
+    border-bottom: 1px solid slategray;
+}
+
+aside > p{
+    text-align: center;
+    border-bottom: 1px dotted gray;
+    padding: 10px 2px;
+    letter-spacing: .5px;
+}
+
+aside > p:last-child{
+    border-bottom: 1px dotted transparent;
+}
+
+.pageanimation{
+    clear: both;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+div.pageanimation > p > a{
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .5s, color .5s;
+}
+
+div.pageanimation > p > a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+body > footer{
+    clear: both;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+}
+
+p.footdays > span{
+    display: inline-block;
+    margin: 10px;
+}
+
+form{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+div.fields > label{
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-block;
+    /* width: 80px; */
+    font-weight: bold;
+    margin: 7px auto;
+}
+
+div.xxx{
+    box-sizing: border-box;
+    margin-left: 80px;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 5px;
+    padding-right: 30px;
+    border: transparent;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    transition: border-bottom 1s, width 1s, outline 1s;
+    margin-right: -10px;
+}
+
+div.fields{
+    margin: 20px 0px;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus{
+    border-bottom: 1px solid green;
+    width: 99%;
+    outline: 0px transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    transition: background-color 9999s,
+                color 9999s,  
+                border-bottom 1s, 
+                width 1s, 
+                outline 1s;
+}
+
+#pword, #vpword{
+    display: inline-block;
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    transform: translateX(-100%);
+    margin-top: 5px;
+}
+
+input[type=submit]{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(89, 89, 109, 0.267);
+    transition: box-shadow 1s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    box-shadow: 10px 10px 10px rgba(36, 36, 189, 0.514);
+}
+
+div.the_tree{
+    box-sizing: border-box;
+    position: relative;
+    width: auto;
+    border: 3px solid black;
+    padding: 10px;
+    overflow: auto;
+    margin-bottom: 50px;
+    font-family: Bodoni MT;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div.the_tree ul{
+    padding-top: 20px;
+    position: relative;
+    white-space: nowrap;
+    transition: all 2s;
+}
+
+div.the_tree li{
+    /* float: left; */
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0px 5px;
+    /* visibility: hidden; */
+    transition: all 2s;
+}
+
+#first{
+    display: block;
+    visibility: visible;
+    top: 10px;
+    right: 0;
+}
+
+div.the_tree li a{
+    writing-mode: vertical-rl;
+    min-width: 20px;
+    min-height: 150px;
+    line-height: 20px;
+    transition: all 2s;
+}
+
+div.the_tree li::before{
+    content: '';
+    position: absolute;
+    left: auto;
+    right: 50%;
+    top: 0;
+    border-top: 1px solid black;
+    width: 50%;
+    height: 20px;
+    transition: all 2s;
+}
+
+div.the_tree li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: auto;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    width: 50%;
+    height: 20px;
+    transition: all 2s;
+}
+
+div.the_tree li:only-child::after, div.the_tree li:only-child::before{
+    display: none;
+    transition: all 2s;
+}
+
+div.the_tree li:only-child{
+    padding-top: 0;
+    transition: all 2s;
+}
+
+div.the_tree li:first-child::before, div.the_tree li:last-child::after{
+    border: 0px none;
+    transition: all 2s;
+}
+
+div.the_tree li:last-child::before{
+    border-right: 1px solid black;
+	border-radius: 0 5px 0 0;
+    transition: all 2s;
+}
+
+div.the_tree li:first-child::after{
+    border-top-left-radius: 5px;
+    transition: all 2s;
+}
+
+div.the_tree ul ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid black;
+    width: 0;
+    height: 20px;
+    transition: all 2s;
+}
+
+div.the_tree li a{
+    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 2s;
+}
+
+div.the_tree li a:hover{
+    background:  rgba(39, 41, 41, 0.133);
+    border-color: rgba(39, 41, 41, 0.133);
+}
+
+
+div.the_tree li a:hover ~ ul li a{
+    background:  rgba(39, 41, 41, 0.133);
+    border-color: rgba(39, 41, 41, 0.133);
+}
+
+.the_tree li a:hover+ul li::after, 
+.the_tree li a:hover+ul li::before, 
+.the_tree li a:hover+ul::before,
+.the_tree li a:hover+ul ul::before{
+	border-color: rgba(39, 41, 41, 0.133);
+}
+
+::-webkit-scrollbar{width: 1vh; background-color: red;}
+::-webkit-scrollbar-track{background-color: rgb(184, 177, 177);}
+::-webkit-scrollbar-thumb{background-color: rgb(92, 92, 83);}
+::-webkit-scrollbar-thumb:hover{background-color: rgba(42, 42, 43, 0.568);}
+::-webkit-scrollbar-button{background-color: rgb(184, 177, 177);}
+
+div.breadcrumb{
+    text-align: center;
+    background-image: linear-gradient(to right, transparent, yellow, purple, transparent);
+    position: relative;
+    box-shadow: 1px 1px 12px;
+}
+
+div.breadcrumb > li > a{
+    display: inline-block;
+    padding: 2vh;
+    color: black;
+    text-decoration: none;
+}
+
+div.breadcrumb > li{
+    display: inline-block;
+    list-style-type: none;
+    transition: all .5s;
+}
+
+div.breadcrumb > li:hover{
+    background-color: rgba(88, 88, 75, 0.342);
+}
+
+div.breadcrumb > li:last-child{
+    border-right: 0 none;
+}
+
+div.breadcrumb > li:first-child{
+    border-left: 0 none;
+}
+
+div.whole{
+    clear: both;
+    box-sizing: border-box;
+    margin: 30px 0;
+    position: relative;
+    box-shadow: 2px 2px 2px;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+div.whole > div.topic{
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.404);
+}
+
+div.whole > p{
+    clear: both;
+}
+
+div.whole > div.full,
+div.whole > div.half,
+div.whole > div.athird,
+div.whole > div.afourth{
+    float: left;
+}
+
+div.whole > div.full{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+div.whole > div.half{
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 2vw;
+}
+
+div.whole > div.athird{
+    box-sizing: border-box;
+    width: 33.3%;
+    font-size: 1.7vw;
+}
+
+div.whole > div.afourth{
+    box-sizing: border-box;
+    width: 25%;
+    font-size: 1.4vw;
+}
+
+div.whole div.content{
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid white;
+    width: auto;
+    padding-top: 120%;
+    position: relative;
+    box-shadow: 3px 3px 3px;
+    transition: all 1s;
+}
+
+div.content > a{
+    text-decoration: none;
+    color: black;
+}
+
+div.content > a > img.fullimg{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+div.content > a > div.caption{
+    text-overflow: ellipsis;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    box-sizing: border-box;
+    position: absolute;
+    text-align: left;
+    padding: 2.5%;
+    background-color: rgb(214, 212, 212);
+}
+
+div.content > a > div.caption > p{
+    text-overflow: ellipsis;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.content > a > div.caption > p > span{
+    /* font-size: 1.9vw; */
+    font-weight: bold;
+    display: block;
+}
+
+div.whole div.content:hover{
+    border-color: blue;
+    text-align: center;
+}
